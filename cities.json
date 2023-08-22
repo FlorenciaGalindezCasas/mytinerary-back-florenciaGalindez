@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Bariloche",
+    "country": "Argentina",
+    "currency": "Argentine Peso",
+    "language": "Spanish",
+    "description": "Bariloche is a picturesque city located in the Argentine Andes, known for its stunning lakes and chocolate shops.",
+    "image": "https://i.ibb.co/8mqW5qc/bariloche.jpg"
+  },
+  {
+    "name": "Cataratas del Iguazu",
+    "country": "Argentina",
+    "currency": "Argentine Peso",
+    "language": "Spanish",
+    "description": "The Iguazu Falls are a breathtaking collection of waterfalls located on the border of Argentina and Brazil.",
+    "image": "https://i.ibb.co/zrQxprz/cataratas.jpg"
+  },
+  {
+    "name": "Dubai",
+    "country": "United Arab Emirates",
+    "currency": "UAE Dirham",
+    "language": "English",
+    "description": "Dubai is a futuristic city in the Middle East known for its towering skyscrapers, luxury shopping, and desert adventures.",
+    "image": "https://i.ibb.co/m58L45P/Dubai.jpg"
+  },
+  {
+    "name": "Firenze",
+    "country": "Italy",
+    "currency": "Euro",
+    "language": "Italian",
+    "description": "Firenze, also known as Florence, is a historic city famous for its Renaissance art and architecture.",
+    "image": "https://i.ibb.co/kKthvpv/firenze.jpg"
+  },
+  {
+    "name": "La Habana",
+    "country": "Cuba",
+    "currency": "Cuban Peso",
+    "language": "Spanish",
+    "description": "La Habana, the capital of Cuba, is known for its colorful buildings, vintage cars, and vibrant culture.",
+    "image": "https://i.ibb.co/JpjYWRh/lahabana.jpg"
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "currency": "British Pound",
+    "language": "English",
+    "description": "London is the capital of the United Kingdom and a diverse hub of history and modernity.",
+    "image": "https://i.ibb.co/B6kc7CR/london.jpg"
+  },
+  {
+    "name": "Los Angeles",
+    "country": "United States",
+    "currency": "US Dollar",
+    "language": "English",
+    "description": "Los Angeles is a sprawling city famous for its entertainment industry and cultural diversity.",
+    "image": "https://i.ibb.co/yQ93Mn5/los-Angeles.webp"
+  },
+  {
+    "name": "Machu Picchu",
+    "country": "Peru",
+    "currency": "Peruvian Sol",
+    "language": "Spanish",
+    "description": "Machu Picchu is a stunning Incan citadel nestled in the Andes mountains.",
+    "image": "https://i.ibb.co/4Z0pNsM/machu.jpg"
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "currency": "Euro",
+    "language": "French",
+    "description": "Paris is the capital of France and a global center for art, fashion, and culture.",
+    "image": "https://i.ibb.co/4FQJM66/paris.jpg"
+  },
+
+  {
+    "name": "Roma",
+    "country": "Italy",
+    "currency": "Euro",
+    "language": "Italian",
+    "description": "Roma, also known as Rome, is the capital of Italy and a treasure trove of ancient history and art.",
+    "image": "https://i.ibb.co/4F2R8LN/roma.jpg"
+  },
+
+  {
+    "name": "San Francisco",
+    "country": "United States",
+    "currency": "US Dollar",
+    "language": "English",
+    "description": "San Francisco is a vibrant city known for its iconic Golden Gate Bridge and tech industry.",
+    "image": "https://i.ibb.co/DVsPW5h/san-Francisco.jpg"
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "currency": "Australian Dollar",
+    "language": "English",
+    "description": "Sydney is a stunning Australian city famous for its beautiful harbor, sandy beaches, and vibrant way of life.",
+    "image": "https://i.ibb.co/crJCmx2/Sydney.jpg"
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "currency": "Japanese Yen",
+    "language": "Japanese",
+    "description": "Tokyo is a bustling metropolis that seamlessly blends tradition with cutting-edge technology.",
+    "image": "https://i.ibb.co/0937Ldg/tokyo.jpg"
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "currency": "Canadian Dollar",
+    "language": "English",
+    "description": "Toronto is the largest city in Canada and a multicultural hub with a thriving arts scene and diverse culinary options.",
+    "image": "https://i.ibb.co/3YNdyFq/toronto.jpg"
+  },
+  {
+    "name": "Venecia",
+    "country": "Italy",
+    "currency": "Euro",
+    "language": "Italian",
+    "description": "Venecia, also known as Venice, is a unique city built on canals and famous for its romantic charm.",
+    "image": "https://i.ibb.co/yV9L0wX/venecia.jpg"
+  }
+]
