@@ -23,13 +23,13 @@ const controller = {
       }
       return res.status(404).json({
         success: false,
-        cities: "No se encontraron cities",
+        cities: "Cities not found",
       });
     } catch (error) {
       console.log(error);
       return res.status(500).json({
         success: true,
-        message: "Error al obterner las cities",
+        message: "Failed to get the cities",
       });
     }
   },
@@ -45,12 +45,12 @@ const controller = {
       }
       return res.status(404).json({
         success: false,
-        message: "No se encuentra la city",
+        message: "City not found",
       });
     } catch (error) {
       return res.status(500).json({
         success: false,
-        message: "Error al obtener la city",
+        message: "Failed to get city",
       });
     }
   },
@@ -66,7 +66,7 @@ const controller = {
       console.log(error);
       return res.status(500).json({
         success: false,
-        message: "Error al crear la city",
+        message: "Failed to create the city",
       });
     }
   },
@@ -78,14 +78,14 @@ const controller = {
       
       return res.status(200).json({
         success: true,
-        message: "City update",
+        message: "City updated",
       });
       
     } catch (error) {
       console.log(error);
       return res.status(500).json({
         success: false,
-        message: "Error al actualizar la city",
+        message: "Failed to update the city",
       });
       
     }
@@ -96,14 +96,14 @@ const controller = {
       await City.deleteOne({ _id: req.params.id });
       return res.status(200).json({
         success: true,
-        message: "City delete",
+        message: "City deleted",
       });
       
     } catch (error) {
         console.log(error);
       return res.status(500).json({
         success: false,
-        message: "Error al eliminar la city",
+        message: "Failed to delete the city",
       });
       
     }
