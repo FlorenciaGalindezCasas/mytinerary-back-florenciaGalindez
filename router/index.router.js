@@ -1,6 +1,8 @@
 //enrutador principal
 import express from "express";
 import cityRouter from "./cities.router.js"
+import userRouter from "./users.router.js"
+import itineraryRouter from "./itineraries.router.js"
 
 const router = express.Router();
 //req: obj solicitud
@@ -12,6 +14,10 @@ router.get('/', (req, res)=> {
 // me permite responder a cualquier tipo de peticion
 
 router.use('/cities', cityRouter);
+
+router.use("/users", userRouter);
+
+router.use("/itineraries", itineraryRouter);
 
 
 export default router;

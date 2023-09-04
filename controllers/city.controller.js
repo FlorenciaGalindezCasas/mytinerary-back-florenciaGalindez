@@ -1,5 +1,5 @@
 import City from "../models/City.js";
-
+import Itinerary from "../models/Itinerary.js";
 
 const controller = {
   getCities: async (req, res) => {
@@ -14,7 +14,8 @@ const controller = {
 
     try {
       //find() de mongoose, busca los elementos
-      const cities = await City.find(queries);
+      const cities = await City.find(queries).populate("itinerary");
+    
       if (cities.length > 0) {
         return res.status(200).json({
           success: true,
@@ -36,7 +37,13 @@ const controller = {
 
   getCityById: async (req, res) => {
     try {
-      const oneCity = await City.findById(req.params.id);
+      const oneCity = await City.findById(req.params.id).populate({
+        path: "itinerary",
+        populate: {
+          path: "user",
+        },
+      });
+      
       if (oneCity) {
         return res.status(200).json({
           success: true,
@@ -54,6 +61,19 @@ const controller = {
       });
     }
   },
+
+/*   getItinerariesByCity: async (id, res)=>{
+    try {
+      
+      return itineraries;
+    } catch (error) {
+       console.log(error);
+      return res.status(500).json({
+        success: false,
+        message: "Failed to create the city",
+    })}
+  
+},    */
 
   createCity: async (req, res) => {
     try {
