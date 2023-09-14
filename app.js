@@ -16,8 +16,18 @@ app.use(express.urlencoded({extended: false}));
 app.use(morgan('dev'));
 //para permitir origenes cruzados (front/back)
 app.use(cors());
+app.use((req, res, next)=>{
+    console.log("Se ejecuto el middleware")
+
+    //respuesta en el middleware corta o termina el ciclo de solicitud y respuesta 
+    /* res.status(200).send("middleware a nivel de aplicacion") */
+
+    //ejecuta el sigte middleware en la pila 
+    next()
+});
 
 app.use('/api', indexRouter);
+
 
 
 app.listen(PORT, ()=>console.log('Server running on port: ' + PORT)); //puerto

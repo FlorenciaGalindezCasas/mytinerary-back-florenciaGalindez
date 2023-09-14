@@ -1,5 +1,6 @@
 import express from "express"
 import itinerayController from "../controllers/itinerary.controller.js"
+import passport from "../middlewares/passport.js";
 
 const router = express.Router()
 
@@ -7,14 +8,26 @@ const {getItineraries, getItineraryById, getItinerariesByCityId, createItinerary
 
 router.get("/", getItineraries)
 
-router.post("/", createItinerary)
+router.post(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  createItinerary
+);
 
 router.get("/:id", getItineraryById);
 
 router.get("/cities/:id", getItinerariesByCityId);
 
-router.put("/:id", updateItinerary);
+router.put(
+  "/:id",
+  passport.authenticate("jwt", { session: false }),
+  updateItinerary
+);
 
-router.delete("/:id", deleteItinerary);
+router.delete(
+  "/:id",
+  passport.authenticate("jwt", { session: false }),
+  deleteItinerary
+);
 
 export default router

@@ -3,6 +3,7 @@ import express from "express";
 import cityRouter from "./cities.router.js"
 import userRouter from "./users.router.js"
 import itineraryRouter from "./itineraries.router.js"
+import authRouter from "./auth.router.js"
 
 const router = express.Router();
 //req: obj solicitud
@@ -18,6 +19,8 @@ router.use('/cities', cityRouter);
 router.use("/users", userRouter);
 
 router.use("/itineraries", itineraryRouter);
+
+router.use("/auth", authRouter)
 
 
 export default router;
